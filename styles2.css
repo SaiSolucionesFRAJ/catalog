@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(7, 52, 110);
+}
+
+header{
+    background-image: url(imagenes/bg.png);     
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px;
+}
+
+.menu .navbar ul {
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+    display: block;
+    text-transform: uppercase;
+
+}
+
+.menu .navbar ul li a:hover {
+    color: #e70B25;
+
+}
+
+#menu {
+    display: none;
+
+}
+
+.menu-icono {
+    width: 35px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+
+}   
+
+
+
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-weight: 800;
+    color: #fffb00;
+    font-family: Elegant Lux Mager, sans-serif;
+}
+
+.programa-info {
+    flex-grow: 1;
+    margin-top: 100px;
+    text-align: center;
+    font-family: Elegant Lux Mager, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.precio {
+    font-size: 25px;
+    color: rgb(251, 255, 0);
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+.productos {
+    max-width: 1500px;
+    
+    
+}
+.programa {
+    display: flex;
+    
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #ffffff0a;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.programa img {
+    width: 45%;
+    height: 100%;
+    margin-top: 150px;
+    border-radius: 4px;
+    margin-right: 60px;
+}
+
+.programa-info p-1{
+    color: #eeff00;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.programa-info p-2{
+    color: #f57e0e;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 600px;
+}
+
+.download {
+    transition: all 400ms ease;
+
+}
+.download:hover {
+    
+    transform:scale(1.1)
+}
+
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    line-height: 25;
+}
+
+.siguiente {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 1px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+.siguiente img {
+    width: 15px;
+    height: 25px;
+    margin-top: 1px;
+    border-radius: 4px;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.botones button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #198bc8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.botones button:hover {
+    background-color: #45a049;
+}
+button {
+    display: inline-block;
+    background-color: #d69717;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    margin: 5px 2px;
+}
+
+button:hover {
+    background-color: #0059b3;
+}
+
+
+
+
+.video-container {
+    margin-top: 20px;
+    margin-left: 125px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 38.25%; /* Proporción 16:9 para videos responsivos */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+}
+.footer {
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo-2 {
+    width: 150px;
+    height: 150px;
+
+
+}
+.links h4 {
+    color: #fdfdfd;
+    font-weight: 100;
+    margin-bottom: 5px;
+    display: flex;
+    font-size: 25px;
+}
+.links ul li a {
+    color: #fdfdfd;
+    font-size: 16px;
+    margin-bottom: 5px;
+    
+    
+}
+.socials {
+    display: flex;
+
+}
+.social {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    
+    border-radius: 50%;
+
+}
+
+
+.social img {
+    margin: 8px 0 0 10px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	
+}
+
+.social img:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-25%);
+}
+
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ddff0005;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 10px 15px 10px 25px;
+}
+
+section h4 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 2;
+    color: #d69717;
+}
+
+.producto-detalles {
+    color: #ffffff;
+
+
+}
+label {
+    display: block;
+    margin: 29px;
+    
+    font-weight: normal;
+    text-align: left;
+    color: #ffffff;
+    
+
+}
+
+select, input[type="text"], input[type="email"], textarea {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    padding: 10px;
+    border: 1px solid #eee1b7;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+option {
+    background-color: #11709900;
+    color: #1f0c5f;
+    font-family: Elegant Lux Mager;
+
+
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+
+.producto-detalles {
+    text-align: center;
+    margin: 20px;
+    margin-right: 45px;
+    margin-left: 10px;
+}
+
+.producto-imagen {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto-video iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media(max-width: 991px ) {
+    .menu {
+        padding: 10px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #eca90c;
+        display: none;
+
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .menu .navbar ul li a:hover {
+        color: #180c0c;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .productos {
+        max-width: 1500px;
+        
+        
+    }
+    
+    .programa {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f9f9f900;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .programa-info h2 {
+        text-align: center;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 400;
+        color: #e7b70b;
+        font-family: Elegant Lux Mager, sans-serif;
+    }
+    
+    .programa-info p {
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        color: #ffffff;
+        font-family: Elegant Lux Mager, sans-serif;
+    }
+    
+    .precio p {
+        font-size: 23px;
+        color: rgb(251, 255, 0);
+        font-weight: 400;
+        line-height: 2.5;
+        
+    }
+    
+
+
+
+    .programa img {
+        width: 95%;
+        height: 100%;
+        margin-left: 55px;
+        margin-bottom: -80px;
+    }
+
+    .nod {
+        width: 25%;
+        margin-left: 55px;
+        margin-bottom: -80px;
+    }
+    .botones {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        gap: 10px;
+        flex-wrap: wrap;
+          
+    }
+  
+    .botones button {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        font-family: Elegant Lux Mager;
+        background-color: #2f255c;
+        color: #fff;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+
+    }
+    
+    .botones button:hover {
+        background-color: #bea100;
+    }
+
+    .siguiente {
+        display: flex;
+        gap: 100px;
+        
+        justify-content: center;
+        padding: 40px 10px 75px 10px;
+        border-radius: 4px;
+    }
+    .siguiente img {
+        width: 15px;
+        height: 25px;
+        border-radius: 4px;
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+    
+    .video-container {
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 2px;
+        justify-content: center;
+        position: relative;
+        width: 10%;
+        padding-bottom: 30.25%; /* Proporción 16:9 para videos responsivos */
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        width: 356px;
+        height: 202px;
+        border-radius: 4px;
+    }
+    .logo {
+        width: 80px;
+    }
+
+    .logo-2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .info {
+        padding: 30px;
+        height: 80vh;
+
+    }
+    .info-txt h2 {
+        font-size: 45px;
+    }
+    .info-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    .info-txt {
+        width: 100%;
+        margin-top: 0;
+    }
+    .info-txt p {
+        margin-bottom: 5px;
+
+    }
+    .info-sec {
+        flex-direction: column;
+        padding: 0px 35px;
+    }
+    .info-1 {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+    .info-2 {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .info-img img {
+        display: none;
+    }
+    .socials {
+        justify-content: center;
+    }
+    .social img {
+        margin: 8px 0 0 0;
+    }
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .links h4 {
+        margin: 25px 0 10px 0;
+    }
+
+    .links ul li {
+        color: #fdfdfd;
+        font-size: 16px;
+        margin-bottom: 5px;
+        text-align: left;
+        
+        
+    }
+    section {
+        margin: 10px;
+        padding: 10px 0px 10px 35px;
+    }
+
+    label, select, input[type="text"], input[type="email"], textarea {
+        margin: 10px 0;
+    }
+
+    .producto-video iframe {
+        width: 356px;
+        height: 202px;
+        border-radius: 4px;
+        margin-top: 20px;
+        margin-left: -15px;
+        margin-right: 40px;
+        justify-content: center;
+        width: 110%;
+        
+        
+    }
+    
+    
+
+}
+
+
